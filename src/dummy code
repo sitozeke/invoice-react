@@ -1,0 +1,48 @@
+ 
+
+               const loadedInvoices = Object.keys(resData).map((key) => ({
+                id: key,
+                company: resData[key].companyName,
+                items: [
+                  {
+                    planName: resData[key].planName,
+                    quantity: 1,
+                    unitPrice: resData[key].amount,
+                    total: resData[key].amount
+                  }
+                ]
+              }));
+
+
+
+
+
+              <div className={classes.invoices}>
+              <h1>All Invoices</h1>
+              <ul className={classes.list}>
+                {invoices.map((invoice) => (
+                  <li key={invoice.id} className={classes.item}>
+                    <a href="...">
+                     
+                      <div className={classes.content}>
+                        <h2>{invoice.company}</h2>
+                        <h2>{invoice.price}</h2>
+                      </div>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+
+
+            <article className={classes.Invoice}>
+              <img src={Invoice.image} alt={Invoice.title} />
+              <h1>{Invoice.title}</h1>
+              <time>{Invoice.date}</time>
+              <p>{Invoice.description}</p>
+              <menu className={classes.actions}>
+                <a href="edit">Edit</a>
+                <button onClick={startDeleteHandler}>Delete</button>
+              </menu>
+            </article>

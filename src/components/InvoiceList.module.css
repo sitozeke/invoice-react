@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invoice {
+  display: flex;
+ 
+  justify-content: space-between;
+  align-items: center;
+  width: 120%;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+ 
+.Linklist{
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  width: 120%;
+  margin-bottom: 10px;
+
+}
+.item{
+  background-color: aliceblue;
+  color: black;
+}
+

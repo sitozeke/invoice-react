@@ -1,0 +1,35 @@
+.invoice {
+    border: 2px solid #333;
+    padding: 20px;
+  }
+  
+  .company-name {
+    font-weight: bold;
+  }
+  
+  .itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px; /* Add some space between items */
+    
+  }
+
+  .actions a,
+.actions button {
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary-800);
+}
